@@ -1,0 +1,6 @@
+#this could obviously be refactored, but it's fast and legible
+
+echo "enter post name"
+read post_name
+touch `date "+%Y-%m-%d-"`$post_name.markdown
+echo -e "---\ntitle:$post_name\nlayout: post\n---" >>  `date "+%Y-%m-%d-"`$post_name.markdown
