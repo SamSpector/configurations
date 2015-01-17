@@ -1,6 +1,10 @@
-#this could obviously be refactored, but it's fast and legible
-
+#use in _posts folder
+#chmod +x (obviously)
+#makes a new post for the jekyll bloggin engine and opens it
 echo "enter post name"
 read post_name
 touch `date "+%Y-%m-%d-"`$post_name.markdown
-echo -e "---\ntitle:$post_name\nlayout: post\n---" >>  `date "+%Y-%m-%d-"`$post_name.markdown
+echo -e "---\ntitle:$post_name\nlayout: post\n---\n" >>  `date "+%Y-%m-%d-"`$post_name.markdown
+# open to line of file after the font matter
+# change number if num of font matter lines chages
+vi +5 `date "+%Y-%m-%d-"`$post_name.markdown
