@@ -1,0 +1,12 @@
+#List of items installed on osx, in case backup solution fails.
+homebrew (obviously)
+brew install git
+brew install tree
+brew install wget
+brew install macvim
+brew install imagemagick
+brew install rvm
+brew install cask
+zsh? $ curl -L http://install.ohmyz.sh | sh
+coreutils?
+vim -- macvim?
