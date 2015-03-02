@@ -17,4 +17,5 @@ defaults write com.apple.dock expose-animation-duration -float 0; killall Dock
 defaults write com.apple.dock no-bouncing -bool TRUE
 defaults write com.apple.dock no-bouncing -bool TRUE;killall Dock&&say animation off
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
-
+defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-delay -float 0
