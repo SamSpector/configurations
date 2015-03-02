@@ -10,3 +10,11 @@ brew install cask
 zsh? $ curl -L http://install.ohmyz.sh | sh
 coreutils?
 vim -- macvim?
+## defaults -- increase osx 10.10 screen resize animation time
+defaults write -g NSWindowResizeTime -float 0.003
+defaults write com.apple.dock expose-animation-duration -float 0; killall Dock
+## disable bouncing -- doesn't work??
+defaults write com.apple.dock no-bouncing -bool TRUE
+defaults write com.apple.dock no-bouncing -bool TRUE;killall Dock&&say animation off
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
